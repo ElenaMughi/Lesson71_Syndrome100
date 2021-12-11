@@ -40,7 +40,7 @@
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
-                        <phase>initialize</phase>
+<!--                        <phase>initialize</phase>-->
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
@@ -54,7 +54,7 @@
                     </execution>
                     <execution>
                         <id>report</id>
-                        <phase>verify</phase>
+<!--                        <phase>verify</phase>-->
                         <goals>
                             <goal>report</goal>
                         </goals>
@@ -68,14 +68,11 @@
                             <limits>
                                 <limit>
                                     <counter>BRANCH</counter>
+<!--                                   <counter>INSTRUCTION</counter>-->
+<!--                                    <counter>LINE</counter>-->
                                     <value>COVEREDRATIO</value>
                                     <minimum>100%</minimum>
                                 </limit>
-                                <!--                                    <limit>-->
-                                <!--                                        <counter>CLASS</counter>-->
-                                <!--                                        <value>MISSEDCOUNT</value>-->
-                                <!--                                        <maximum>0</maximum>-->
-                                <!--                                    </limit>-->
                             </limits>
                         </rule>
                     </rules>
