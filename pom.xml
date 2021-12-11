@@ -46,10 +46,10 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>check</id>
+                        <id>check-007</id>
                         <phase>verify</phase>
                         <goals>
-                            <goal>report</goal>
+                            <goal>check</goal>
                         </goals>
                     </execution>
                     <execution>
@@ -67,9 +67,9 @@
                             <element>BUNDLE</element>
                             <limits>
                                 <limit>
-                                    <counter>LINE</counter>
+                                    <counter>BRANCH</counter>
                                     <value>COVEREDRATIO</value>
-                                    <minimum>0.80</minimum>
+                                    <minimum>100%</minimum>
                                 </limit>
                                 <!--                                    <limit>-->
                                 <!--                                        <counter>CLASS</counter>-->
